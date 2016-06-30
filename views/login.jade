@@ -1,0 +1,35 @@
+extends ./layout.jade
+
+block title
+    title SECD Login
+    
+block headScript
+    script(type='text/javascript').
+        var onLoginClick = function () {
+            window.location.replace("/auth");
+        };
+
+        var contentUI = {
+            type: "space",
+            rows: [
+                {},
+                {
+                    cols: [
+                        {},
+                        {id:            "loginButton",
+                            view:       "button",
+                            type:       "iconButton",
+                            icon:       "sign-in",
+                            label:      "login with google",
+                            inputWidth: 200,
+                            click:      onLoginClick
+                        },
+                        {}
+                    ]
+                },
+                {},
+            ]
+        };
+    
+block content
+    

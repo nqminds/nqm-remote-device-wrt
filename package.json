@@ -1,0 +1,31 @@
+{
+  "name": "nqm-remote-device",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nqminds/nqm-remote-device"
+  },
+  "author": "toby.ealden@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nqminds/nqm-remote-device/issues"
+  },
+  "homepage": "https://github.com/nqminds/nqm-remote-device",
+  "dependencies": {
+    "ddp": "git://github.com/nqminds/node-ddp-client",
+    "ddp-server-reactive": "git://github.com/nqminds/DDP-Server-Reactive",
+    "debug": "^2.2.0",
+    "express": "^4.13.3",
+    "extract-zip": "^1.1.1",
+    "jade": "^1.11.0",
+    "lodash": "^3.10.1",
+    "minimongo": "git://github.com/nqminds/minimongo",
+    "rimraf": "^2.4.3",
+    "shortid": "^2.2.4"
+  }
+}

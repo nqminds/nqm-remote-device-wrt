@@ -1,0 +1,11 @@
+html
+    head
+        title ::inbox::
+        link(rel='stylesheet', href='webix/webix.css', type='text/css', media='screen', charset='utf-8')
+        script(src='webix/webix.js', type='text/javascript', charset='utf-8')
+        script.
+            var data=!{JSON.stringify(messages)};
+        script(src="js/inbox.js")
+    body
+        <div id="viewmessage" style='display:none;'>No message selected from account.</div>
+        <div id="viewmessagenew" style='display:none;'></div>

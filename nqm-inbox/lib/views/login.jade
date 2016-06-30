@@ -1,0 +1,36 @@
+html
+    head
+        title ::inbox::
+        link(rel='stylesheet', href='webix/webix.css', type='text/css', media='screen', charset='utf-8')
+        script(src='webix/webix.js', type='text/javascript', charset='utf-8')
+        script(type='text/javascript').
+            var onLoginClick = function () {
+                window.location.replace("https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/gmail.modify&redirect_uri=http://localhost:3000/oauthCB&response_type=code&client_id=593156495033-lhtutacl11bqq7ed2diobk7ti9u3vcph.apps.googleusercontent.com&access_type=offline");
+            };
+        
+            var ui = {
+                type: "space",
+                rows: [
+                    {},
+                    {
+                        cols: [
+                            {},
+                            {
+                                id:         "loginButton",
+                                view:       "button",
+                                type:       "iconButton",
+                                icon:       "sign-in",
+                                label:      "login with google",
+                                inputWidth: 200,
+                                click:      onLoginClick
+                            },
+                            {}
+                        ]
+                    },
+                    {},
+                ]
+            };
+            
+            webix.ready(function() {
+                webix.ui(ui);
+            });

@@ -1,0 +1,18 @@
+{
+  "hostname": "192.168.100.1",
+  "port": 8125,
+  "xrhServer": "192.168.100.1",
+  "xrhPort": 2222,
+  "ssl": false,
+  "autoReconnectTimer": 5000,
+  "deviceId": "galaxy-note",
+  "capCredentials": "VJx8m87Dle:password",
+  "googleClientId": "593156495033-lhtutacl11bqq7ed2diobk7ti9u3vcph.apps.googleusercontent.com",
+  "googleSecret": "u5qEQee5Wy3ro5zvW9REDRqM",
+  "hostURL": "mylinkit.local:8125",
+  "heartbeatInterval": 10000,
+  "appDatasetId": "NJxAJbJ8ge",
+  "appsPath": "./apps",
+  "appDownloadPath": "./appDownload",
+  "nodePath": ""
+}
